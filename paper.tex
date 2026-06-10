@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
-\usepackage{flushend}
+%\usepackage{flushend}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
@@ -42,11 +42,11 @@ this approach.
 \section{Introduction}
 Undergraduate survey courses in software engineering typically include blocks of instruction covering design patterns. The topic is important because it represents an important step beyond simply learning programming language syntax, algorithms, and data structures, and towards development of scalable software-intensive systems that are easier to understand, maintain, and reuse. Software design patterns are an important tool in professional software development to help organize code, manage complexity, and provide flexibility and maintainability, particularly in larger-scale or critical systems. Design patterns also provide a common vocabulary with which software engineers can communicate complex design concepts in an efficient and shorthand manner. They represent solutions to commonly recurring design problems, and recognizing those problems as they appear allow students to work more efficiently by avoiding having to solve problems that previously have already been solved by others.
 
-Teaching design patterns as part of an undergraduate course poses two challenges to course designers and instructors. First, although they represent an important concept to apply in professional practice, the majority of students taking a software engineering course as part of an undergraduate program typically lack programming maturity and experience in software development. Consequently, it is common for students to relate to the types of design problems patterns solve. Connonly, software engineering courses are taken during a student's junior year, or perhaps fall semester of their senior year. By that time, students often have completed only a handful of computer science courses, and most likely have not worked on a larger-scale software development effort. This is almost paradoxical: students need to understand and apply concepts related to professional software development practice, while simultaneously lacking the experience and conceptual knowledge to do so. The all-too-frequent result is that design pattern concepts remain abstract and unrelatable to students, and they do not internalize the material as much as instructors may hope.
+Teaching design patterns as part of an undergraduate course poses two challenges to course designers and instructors. First, although they represent an important concept to apply in professional practice, the majority of students taking a software engineering course as part of an undergraduate program typically lack programming maturity and experience in software development. Consequently, it is common for students to relate to the types of design problems patterns solve. Commonly, software engineering courses are taken during a student's junior year, or perhaps fall semester of their senior year. By that time, students often have completed only a handful of computer science courses, and most likely have not worked on a larger-scale software development effort. This is almost paradoxical: students need to understand and apply concepts related to professional software development practice, while simultaneously lacking the experience and conceptual knowledge to do so. The all-too-frequent result is that design pattern concepts remain abstract and unrelatable to students, and they do not internalize the material as much as instructors may hope.
 
 The second challenge in teaching design patterns to undergraduate students lies in the nature of the material. Going back to the Gang of Four catalog~\cite{gamma1994}, design patterns have always been organized in a taxonomy with three primary categories: creational patterns; structural patterns; and behavioral patterns. Each category, then contains a collection of patterns. The most common, traditional approach to teaching design patterns involves presenting them in a dry, methodical manner heavy on lecture and mirroring the structure of the Gang of Four taxonomy. Then, for each pattern, the general design problem is presented, followed by the abstract solution model, and then perhaps lastly some example code in an object-oriented programming language.
 
-The latter challenge represents a more significant barrier to the effective teaching of design patterns: doing so is boring, repetitous, and not engaging to students. Despite the importance of the topic, students often have difficulty retaining much of the details and nuances of various patterns and might retain only basic information, such as the nature of a Singleton pattern, for instance.
+The latter challenge represents a more significant barrier to the effective teaching of design patterns: doing so is boring, repetitious, and not engaging to students. Despite the importance of the topic, students often have difficulty retaining much of the details and nuances of various patterns and might retain only basic information, such as the nature of a Singleton pattern, for instance.
 
 We tend to focus on the abstract before the implementation (a significant tenet of object oriented design and programming)
 
@@ -54,6 +54,30 @@ What if we flip the script?  How can we take a bottom-up approach to teaching de
 
 \section{Related Work}
 The literature does not contain an abundance of recent material on this topic. That is not to say, however, that teaching design patterns is an area of software engineering education that cannot be improved. This section provides a brief survey of the literature reflecting current pedagogical practice.
+
+\section{Methodology}
+Needless to say, one cannot, and would never wish to, teach a large number of patterns. The number of distinct patterns taught is kept minimal (perhaps at most two or three patterns per category), focusing primarily on those patterns most commonly appearing in practice and that solve problems students are likely to have encountered in programming exercises during earlier course work. This approach was applied in an undergraduate software engineering course in a single lesson covering the topic of design patterns. That introductory lesson was subsequently followed by a practical application lesson that allows more open-ended problem solving activities. The course enrollment included students not only in the computer science major, but also in cyber science, systems engineering, and data science programs.
+\section{Discussion}
+
+What is the argument for a code-first approach?
+
+If students first encounter a code example that solves a real problem, they can appreciate the motivation behind the pattern. When the abstract pattern is introduced afterward, it appears as a generalization of something they have already experienced rather than as an arbitrary diagram or UML structure.
+
+Does that send mixed messages relative to other software development concepts?
+
+Hands on practice with code. Examine the code, build and run it. What does it do?
+
+Make a modification to it given instruction. This gets to the heart of what the design pattern is and does, i.e., what problem it is intended to solve.
+
+Placement of lesson in the course.
+
+Positioning of the course in the program curriculum.
+
+Effectiveness.
+
+
+\section{Conclusions and Future Work}
+
 \begin{thebibliography}{9}
 
 \bibitem{gamma1994}
