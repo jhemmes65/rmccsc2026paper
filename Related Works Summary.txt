@@ -1,0 +1,90 @@
+Carrington 1998.
+Team design and coding exercises.
+
+"students do not have sufficient experience to manage programs of this size." 600 lines of code.
+Active learning, Cooperative learning (small groups)
+"Teaching about software design must encompass both the product of the design activity (the design object) and the process by which this object is created. The importance of good software design increases with system size and complexity, a point that makes small convincing examples difficult to find."
+
+Carrington 2018
+
+"A major challenge in teaching software engineering is helping students understand the differences between the small programs that they write as educational exercises and the large scale software products that they will deal with when they are working."
+
+"Software engineering educators need techniques to help their students cross this gap as they transition from novices to practitioners."
+
+Introduces patterns in existing programs as part of integrating new features in open source code.
+
+Chimalakonda, 2018
+
+In the fourth layer and on the left hand side of Figure §5, we have a three-tier architecture of a TEL system that implements two important architectural patterns from (Buschmann et al., 1996) (i) From Mud to Structure (Layers) – allows controlled decomposition of overall system (ii) MVC and several design patterns (Strategy, Composite, Factory and so on). On the right hand side is an MVC architectural pattern that is derived from instructional architecture patterns and instructional design patterns in POID.
+
+Gestwicki 2008
+
+Many of the students were unable to generate accurate, isolated instances of the patterns [Gestwicki and Jayaraman 2005]. This is not a coincidence: it is difficult to translate from the isolated examples of Gamma et al. to the complex and multifaced pattern reifications encountered in practice. Instead, patterns are best taught by presenting them in software of significant scale that contains collaborations among patterns. This belief is supported by the literature: case studies have been used as a means for showing the definition, benefits, and costs of design patterns [Wick 2005; Dewan 2005], and some resources have also shifted from a dictionary presentation of patterns to illustrative examples [Holub 2004].
+
+Integrates patterns into games.
+
+Using games to teach computer science is not a new idea. We have already mentioned some examples that use games to teach patterns, and there are many more. However, many of the examples one encounters in textbooks and on the Web take shortcuts in the name of clarity and simplicity. 
+
+Hadar 2008
+
+Under the demands of abstraction, formalization, and executability, the formal OO paradigm has come to sometimes clash with the very intuitions that produced it. Thus, while objects, classes, and inheritance certainly have an intuitive flavor, their formal version in OOD is different in important ways from their intuitive origins.
+
+Healy 2023
+
+Game Design Patterns
+
+Lartigue 2018
+
+Some claim that "patterns help a novice perform more like an expert" [17] and that "(p)atterns help you build on the collective experience of skilled software engineers" (emphasis added). [9]
+
+Subjects for the study were recruited from students enrolled in a junior-level software modeling and design course in an ABET-accredited computer science or ABET-accredited software engineering program
+ 
+Despite the large number of publications regarding design patterns, there has been an extremely small amount of detailed, empirical evidence on their use and application since their introduction. 
+
+Teaching Patterns to Undergraduate Students. Beck, et al., made early claims that “Most people whom we have exposed to the concept of patterns can quickly become proficient at using the common ones.” [7] Much work has since been done in bringing design patterns into the classroom. Many universities have created courses dedicated entirely to patterns, both at the graduate and undergraduate level, and some have endeavored to incorporate design patterns early and throughout foundational classes. [3, 36] Others have attempted to introduce structure for the teaching of design patterns itself, or cataloging pedagogical patterns expressly designed for facilitating such teaching. [22]
+
+Köppe lists several pitfalls in the teaching of patterns, and offers some potential strategies to avoid them: 
+• Students that start to learn patterns often hastily go straight to the solution and apply it.
+• It’s hard for students to see the advantages of correct applied patterns without direct experience.
+• Students may try to show understanding by implementing as many patterns as possible.
+• Students see patterns as something that intelligent people have written, not as “best practices,” and that experienced developers use them without thinking about them. [22]
+
+One of the fundamental problems of teaching design patterns in the classroom is that patterns are often introduced in a formulaic, almost sterile environment — introduced and described one after the other, as if specific patterns are merely items in a design catalog to be selected when needed. Missing is context — the application of the design pattern in one or more application domains or scenarios that are understandable by the student. [4, 30, 36]
+
+Without context, “(t)eaching design patterns in isolation is similar to studying a foreign language with only a dictionary.” [30]
+
+Question: Is a large project necessary?
+
+Evidence that novice software engineers can recognize certain design patterns in software and refactor that software quickly to accomplish a desired task. In other cases, we note that the inclusion of design patterns can vastly increase the amount of time needed for novice software engineers to understand and refactor software containing such patterns. 
+
+Nevison, 2003
+
+Program should not be too large (simplify to manage the complexity of a big software project)
+
+Develop more incrementally complex versions.
+
+However, they can be a useful organizing principle as they read programs that involve interacting classes and ask the inevitable question, "Why do it this way?" As students progress into the second course in computer science, they will begin to develop larger programs of their own, and this exposure to design patterns can help provide them with some organizing principles.
+
+Pillay 2010 
+
+Research has shown that design patterns are both difficult to learn and teach. 
+
+The main difficulty experienced by students was determining when to use which design pattern. Some of the students also stated that design patterns were difficult to understand and it took a while to grasp the different concepts. Students also felt that the use of design patterns increased the complexity of the design and code which led to confusion in some cases. A majority of the students experienced problems with understanding the iterator design pattern while they experienced the least difficulty with the singleton design pattern. 
+
+According to Preiss [9] design patterns are harder to teach than to learn. Antonio et al. [10] and O’ Cinneide et al. [11] state that lecturing in the traditional manner is insufficient for teaching design patterns. A problem-based approach in which students experiment with design patterns is more appropriate [11].
+
+Students need to see patterns in use to grasp the different concepts [12]. Three main categories of teaching methodologies are relating design patterns to introductory programming patterns, teaching design patterns in-the-small and in-the-large, and teaching design patterns in a particular context. These are discussed below.
+
+According to Dewan [14] design patterns must be presented in-the-small and in-the-large. A common error made is that design patterns are only taught in-the-small and not in-the-large. Patterns must firstly be presented in-the-small. Each design pattern should be presented by describing the design pattern, the motivation for each design pattern, examples of use and implementation and a set of smaller exercises for each pattern ([1], [6], [13], [15]). 
+
+Vahldick, 2026
+
+Patterns in game design
+
+Wallingford 1996
+
+Using patterns to teach general object-oriented programming in CS1
+
+The student will examine existing code in order to recognize patterns in existing code. They will analyze new problems by first identifying problem features that match one of the patterns in their  “catalog”
+ and then stylizing the code pattern to match the details of the problem.
+

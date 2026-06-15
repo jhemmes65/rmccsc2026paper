@@ -1,0 +1,23 @@
+Gestwicki, P. & Sun, F. (2008) – "Teaching Design Patterns through Computer Game Development"
+Hadar, I. & Leron, U. (2008) – "How intuitive is object-oriented design?"
+Carrington, D. (2003) – "Teaching Design Patterns in Software Engineering"
+Schmidt, D.C. (1995) – "Experience Using Design Patterns to Develop Reusable Object-Oriented Communication Software" (often cited as a teaching reference)
+Wallingford, E. (1996) – "Toward a First Course Based on Object-Oriented Patterns"
+Bergin, J. (1999) – "Active Learning and Patterns for Teaching Object Technology"
+Allen, E. et al. (2003) – "Mining for Diamonds: Pattern-Oriented Software Design"
+
+Piccolo, P., Guerra, E., Balaguer, F., Garrido, A., Vaccare Braga, R. (2016) – "Using a Card Game for Teaching Design Patterns," Proceedings of the 11th Latin-American Conference on Pattern Languages of Programming (SugarLoafPLoP).
+Lartigue, J., Chapman, R., Wong, K., Shen, C., Brown, D. (2018) – "Comprehension and Application of Design Patterns by Novice Software Engineers," Proceedings of the 2018 ACM Southeast Conference.
+Chimalakonda, S., Nori, K.V. (2018) – "A Patterns Based Approach for Design of Educational Technologies."
+Angry Birds-based design patterns paper (POGIL study) – evaluates Process Oriented Guided Inquiry Learning (POGIL) and a game-scenario-based approach using Angry Birds for teaching design patterns this paper proposes and evaluates an educational material that illustrates the use of design patterns using game scenarios from the Angry Birds franchise, and measures the impact of POGIL on overall performance of students (exact year/authors need verification — search for "POGIL design patterns Angry Birds" to confirm). ResearchGate
+
+Healy, J. P., & Cullen, C. (2022a). Design heuristics as a pattern approach to idea generation.
+In Gameplay design patterns approaches - DiGRA22 [workshop].
+
+Christian Köppe. 2011. A Pattern Language for Teaching Design Patterns (Part 2). In Proceedings of the 18th Conference on Pattern Languages of Programs (PLoP ’11). ACM, New York, NY, USA, Article 23, 16 pages. https://doi.org/10.1145/2578903.2579161
+
+Asher Sterkin. 2006. Teaching Design Patterns. In FECS, Hamid R. Arabnia (Ed.). CSREA Press, 167–176.
+
+Sylvia Stuurman and Gert Florijn. 2004. Experiences with Teaching Design Patterns. SIGCSE Bull. 36, 3 (June 2004), 151–155. https://doi.org/10.1145/
+
+Stephen Weiss. 2005. Teaching Design Patterns by Stealth. In Proceedings of the 36th SIGCSE Technical Symposium on Computer Science Education (SIGCSE ’05). ACM, New York, NY, USA, 492–494. https://doi.org/10.1145/1047344.10475001026487.1008037
