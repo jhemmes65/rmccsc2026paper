@@ -47,17 +47,15 @@ Despite decades of community experience in teaching software design patterns to 
 
 Examining existing code to determine appropriate applications of design patterns is certainly nothing new. Since the introduction of the Gang of Four's Design Patterns catalog~\cite{gamma1994}, patterns have been covered in undergraduate programming courses, even as early as CS1~\cite{wallingford1996}. The benefits of using patterns to create elegant, maintainable software designs similarly has a lengthy history~\cite{schmidt1995}, which is commonly emphasized in lesson materials as motivation.
 
-One common practice is to provide students with an existing program of some size that either contains patterns fully implemented~\cite{chimalakonda2018}, or provides opportunities to apply patterns in code that does not already contain them. Commonly we see this using examples of computer games~\cite{gestwicki2008, healy2023, valdick2026}. These types of programs tend to be rather large with some inherent complexity. Games also tend to be designed and implemented using multiple logical layers representing separation of concerns, e.g., graphics, gameplay, data, etc., and therefore there is an abundance of opportunity for students to discover improvement areas and modify the design and implementation through application of patterns. However, to do so effectively, students must already be familiar with some subset of the catalog of design patterns. But how do they learn that catalog in the first place? Ultimately, even current practice for presenting patterns commonly involves lecturing over the catalog pf patterns, stepping through the the design problem for each pattern, and presenting the abstract model, typically using the Unified Modeling Language (UML).
-
-
+One common practice is to provide students with an existing program of some size that either contains patterns fully implemented~\cite{chimalakonda2018}, or provides opportunities to apply patterns in code that does not already contain them. Commonly we see this using examples of computer games~\cite{gestwicki2008, healy2023, valdick2026}. These types of programs tend to be rather large with some inherent complexity. Games also tend to be designed and implemented using multiple logical layers representing separation of concerns, e.g., graphics, gameplay, data, etc., and therefore there is an abundance of opportunity for students to discover improvement areas and modify the design and implementation through application of patterns. However, to do so effectively, students must already be familiar with some subset of the catalog of design patterns. But how do they learn that catalog in the first place? Ultimately, even current practice for presenting patterns commonly involves lecturing over the catalog of patterns, stepping through the the design problem for each pattern, and presenting the abstract model, typically using the Unified Modeling Language (UML).
 
 \section{Methodology}
 
-The instructional model we use to teach design patterns involves three sequential steps, each building on the previous and serving a distinct purpose.
+The instructional model we use to teach design patterns involves four sequential steps, each building on the previous and serving a distinct purpose. These steps are intended to provide student-centered instruction that minimizes the time instructors spend lecturing over the abstract pattern designs.
 
 \subsection{Step 1: Examine a Working Code Example}
 
-To begin, students are provided a working example in code that implements a common design pattern. They are not told yet what pattern it is or what design problem is being solved, as this step is intended to serve as a discovery process. Students are initially asked to study the code and explain what they think it does. They are also asked to identify various elements of the code, e.g., concrete or abstract classes, interfaces, inheritance, polymorphism, abstractions, and anything else that stands out, whether something they are unfamiliar with or unusual. When covering design patterns, students already have the prerequisite familiarity with object-oriented concepts and object-oriented programming.
+To begin, students are provided a working example in code that implements a common design pattern. They are not told yet what pattern it is or what design problem is being solved, as this step is intended to serve as a discovery process. Students are initially asked to study the code and explain what they think it does. They may run the program as well if they so choose. They are also asked to identify various elements of the code, e.g., concrete or abstract classes, interfaces, inheritance, polymorphism, abstractions, and anything else that stands out, whether something they are unfamiliar with or unusual, which can include any modularity or extensibility present in the design. They are also asked to comment on how easily understandable the design and implementation are. When covering design patterns, students already have the prerequisite familiarity with object-oriented concepts and object-oriented programming.
 
 The examples provided for study are drawn from problem domains with which students have familiarity, e.g., video game characters, smartphone capabilities, food delivery apps, etc., which better allows them to focus on how the various code elements work together to provide that functionality. An example of an object-oriented Python program snippet that implements a Decorator pattern using a video game character is shown in Figures~1 and~2.
 
@@ -78,40 +76,26 @@ The examples provided for study are drawn from problem domains with which studen
 \subsection{Step 2: Create Abstract Model from the Code}
 Once students understand what the code example does and have identified the relevant design elements, they are asked to create an abstract model of the code using a UML class diagram. By doing so, they can better visualize the elements and how they relate to each other as an object-oriented model. Students also visualize the purpose of class instance variables and how they contribute to program functionality when implemented in code.
 
+The model students care as part of this step is an abstract representation of a particular problem solution. When creating this model, students are asked to think about how the abstract elements in the model can be further generalized to make the solution less application specific. The instructor's role is to further reinforce understanding of the design elements and critique the models. Student peer review can also be used as part of this activity.
 
--------------------------------------------------------------
-This is garbage - rewrite
-declarative and procedural knowledge
+\subsection{Step 3: Present the General Pattern}
 
-students must first wrestle with a concrete programming problem in working code before any canonical pattern vocabulary is introduced. The abstract model---UML, intent statement, participants list---arrives only after students have felt the pain the pattern cures and have begun constructing their own partial solution. The formal pattern then becomes a name and a reference architecture for something the student already understands experientially.
+Once students have had hands-on experience with the code and created an abstract model of that code, the more traditional design pattern lesson begins. However, because of the prerequisite activity work, this lesson is abbreviated. Taking the application-specific design models as a starting point, the general design pattern model can be easily derived. The identification and purpose of model elements, the object-oriented design concepts used, and the relationships between elements have already been established. What is traditionally the most tedious and unengaging part of teaching design patterns can be completed in a matter of a few minutes.
 
-also garbage:
-Following Phase 1, the instructor leads a class discussion centred on three questions:
-(1) \emph{What changed?}---identifying which parts of the code required modification;
-(2) \emph{Why was it hard?}---naming the coupling, duplication, or rigidity that caused
-difficulty; and (3) \emph{What would a better structure look like?}---inviting students
-to propose refactorings. This Socratic dialogue surfaces the pattern's motivating forces
-without yet naming them.
+\subsection{Step 4: Apply to a New Problem}
 
-The instructor then presents the refactored solution, walking through the code
-transformation from the students' starting point to the pattern-conformant structure.
-Only at the conclusion of this code walkthrough is the pattern named and the UML
-diagram introduced---now as a summary of what the students have just seen, not as
-a specification for something they are about to see.
-------------------------------------------------------------
+In the final step, a more complex program is given to students. This program does not contain any design patterns, but provides an opportunity for refactoring. As the last portion of the lesson, students identify how the pattern covered might fit into the existing program. They identify the application-specific classes that correspond to the abstract general model and create a new design for the program that includes the pattern. This gets to the heart of what the design pattern is and why it exists, i.e., what problem it is intended to solve. By taking this step, students gain an appreciation for the need and benefit of such patterns.
 
-introduce code example narrowly focused
-
-Have students examine the code and explain what the code does, e.g., what does a decorator do?
-
-What is unique or interesting about the code? game example, modularity, etc.
-
-Point out the elements of the pattern. Go from more abstract to more concrete and specific.
-
-
-
-Needless to say, one cannot, and would never wish to, teach a large number of patterns. The number of distinct patterns taught is kept minimal (perhaps at most two or three patterns per category), focusing primarily on those patterns most commonly appearing in practice and that solve problems students are likely to have encountered in programming exercises during earlier course work. This approach was applied in an undergraduate software engineering course in a single lesson covering the topic of design patterns. That introductory lesson was subsequently followed by a practical application lesson that allows more open-ended problem solving activities. The course enrollment included students not only in the computer science major, but also in cyber science, systems engineering, and data science programs.
 \section{Discussion}
+
+
+
+Needless to say, one cannot, and would never wish to, teach a large number of patterns. The number of distinct patterns taught is kept minimal (perhaps at most two or three patterns per category), focusing primarily on those patterns most commonly appearing in practice and that solve problems students are likely to have encountered in programming exercises during earlier course work.
+
+
+This approach was applied in an undergraduate software engineering course in a single lesson covering the topic of design patterns. That introductory lesson was subsequently followed by a practical application lesson that allows more open-ended problem solving activities. The course enrollment included students not only in the computer science major, but also in cyber science, systems engineering, and data science programs.
+
+For patterns not covered, students should understand that patterns exist and to reference a catalog of patterns if they are stuck on a particular design problem.
 
 What is the argument for a code-first approach?
 
@@ -121,7 +105,7 @@ Does that send mixed messages relative to other software development concepts?
 
 Hands on practice with code. Examine the code, build and run it. What does it do?
 
-Make a modification to it given instruction. This gets to the heart of what the design pattern is and does, i.e., what problem it is intended to solve.
+Make a modification to it given instruction. 
 
 Placement of lesson in the course.
 
