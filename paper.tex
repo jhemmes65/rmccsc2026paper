@@ -75,7 +75,7 @@ The examples provided for study are drawn from problem domains with which studen
 
 \begin{figure*}[h]
 \centering
-\includegraphics[width=.75\textwidth]{classdiagrams.png}
+\includegraphics[width=.8\textwidth]{classdiagrams.png}
 \label{umlclass}
 \caption{Decorator Pattern Class Mapping}
 \end{figure*}
@@ -96,52 +96,42 @@ Once students have had hands-on experience with the code and created an abstract
 
 In the final step, a more complex program is given to students. This program does not contain any design patterns, but provides an opportunity for refactoring. As the last portion of the lesson, students identify how the pattern covered might fit into the existing program. They identify the application-specific classes that correspond to the abstract general model and create a new design for the program that includes the pattern. This gets to the heart of what the design pattern is and why it exists, i.e., what problem it is intended to solve. By taking this step, students gain an appreciation for the need and benefit of such patterns.
 
-In this step, the analysis of the flawed program is part of an intructor-guided discussion. Part of the learning involves not only the identification of program segments that can be improved using design patterns, but a discussion and understanding of what the code lacks, how an appropriate design pattern can improve readability, simplicity, or extensibility, and how that pattern would fit into the existing program structure.
+In this step, the analysis of the flawed program is part of an instructor-guided discussion. Part of the learning involves not only the identification of program segments that can be improved using design patterns, but a discussion and understanding of what the code lacks, how an appropriate design pattern can improve readability, simplicity, or extensibility, and how that pattern would fit into the existing program structure.
 
 For the example in Figures~1 and~2, students map the elements of the Game Character class to the abstract components of the Decorator pattern. In particular, the relatable {\texttt{attack}} and {\texttt{defend}} operations are abstracted into the general {\texttt{operation}} method in the canonical pattern design, as shown in Figure~3.
 
+\section{Implementation and Feedback}
+
+This approach was applied in an undergraduate software engineering course in a single lesson covering the topic of design patterns ($n=41$). That introductory lesson was subsequently followed by a practical application lesson that allows more open-ended problem solving activities. The course enrollment included students not only in the computer science major, but also in cyber science, systems engineering, and data science programs. Student feedback on the lessons was overwhelmingly positive. This is a substantial contrast to previous years' offerings in which a more traditional approach was taken. Historically, students generally feel that a traditional approach goes too quickly, lacks ability to work with patterns in a hands-on and timely manner, and tends to be dry and unengaging. These concerns were corrected by the code-first approach, based on student feedback.
 
 \section{Discussion}
 
-This will be the main substance of the paper.
+This work is not intended to necessarily increase student proficiency in understanding and applying design patterns. The intent is more to apply student-centered pedagogy to a topic that frequently lacks engagement in practice. By starting from a code example of a design pattern implementation that leads to the more abstract model, the conceptual basis for the pattern, and the design problems it is intended to solve, we minimize to the extent possible classroom time spent in lecture covering unrelatable and repetitious topics.
 
-Needless to say, one cannot, and would never wish to, teach a large number of patterns. The number of distinct patterns taught is kept minimal (perhaps at most two or three patterns per category), focusing primarily on those patterns most commonly appearing in practice and that solve problems students are likely to have encountered in programming exercises during earlier course work.
+With a more methodical approach, this methodology also prevents one of the most common problems instructors face when covering design patterns: trying to cover too many. Needless to say, one cannot, and would never wish to, teach a large number of patterns. However, one common pitfall is for instructors to attempt to power through a large number of patterns, resulting in little or no student retention. By spending a bit more time on each one and allowing student self-discovery, the number of distinct patterns taught is kept minimal (perhaps at most two or three patterns per category), focusing primarily on those patterns most commonly appearing in practice and that solve problems students are likely to have encountered in programming exercises during earlier course work.
 
+The discovery portion allows students to better see firsthand the benefit of applying patterns and the specific design patterns they are intended to solve. If students first encounter a code example that solves a real and relatable problem, they can appreciate the motivation behind and the purpose for the pattern. When the abstract pattern is introduced afterward, it appears as an incremental generalization of something they have already experienced rather than as an arbitrary diagram or UML structure that must be parsed and digested as an unfamiliar whole. For patterns not covered during a lesson, one takeaway for students is an understanding that patterns exist and to reference a catalog of patterns if they are stuck on a particular design problem.
 
-This approach was applied in an undergraduate software engineering course in a single lesson covering the topic of design patterns. That introductory lesson was subsequently followed by a practical application lesson that allows more open-ended problem solving activities. The course enrollment included students not only in the computer science major, but also in cyber science, systems engineering, and data science programs.
+The argument in favor of a code-first approach is that students start with the small and familiar, then incrementally work upwards to the larger and more abstract.
 
-For patterns not covered, students should understand that patterns exist and to reference a catalog of patterns if they are stuck on a particular design problem.
+Teaching design patterns in such a manner requires some prerequisite knowledge. First, students must have some background and comfort level with object-oriented design concepts and object-oriented programming. Students must also have familiarity with UML class diagrams for modeling and discussion of patterns.  Using Python as an object-oriented programming language works well as it produces concise and readable code that matches well with their corresponding abstract UML design elements. In our experience, placing the topic approximately one-third of the way into a semester schedule is a suitable placement, and taking two or three lessons to cover a small number of significant patterns generally works well.
 
-What is the argument for a code-first approach?
-
-If students first encounter a code example that solves a real problem, they can appreciate the motivation behind the pattern. When the abstract pattern is introduced afterward, it appears as a generalization of something they have already experienced rather than as an arbitrary diagram or UML structure.
 
 Does that send mixed messages relative to other software development concepts?
 
-Hands on practice with code. Examine the code, build and run it. What does it do?
-
-Make a modification to it given instruction. 
-
-Placement of lesson in the course.
-
-Positioning of the course in the program curriculum.
-
-Effectiveness.
-
-This work is not intended to necessarily increase student proficiency in understanding and applying design patterns. The intent is more to apply student-centered pedagogy to a topic that frequently lacks engagement in practice. By starting from a code example of a design pattern implementation that leads to the more abstract model, the conceptual basis for the pattern, and the design problems it is intended to solve, we minimize to the extent possible classroom time spent in lecture covering unrelatable and repetitious topics.
-
-With a more methodical approach, this methodology also prevents one of the most common problems instructors face when covering design patterns: trying to cover too many.
-
-To further place this work in context, we acknowledge Köppe's pitfalls related to the teaching of patterns~\cite{koppe2011}:
-\begin{itemize}
-\item Students often attempt to apply them too hastily
-\item Insufficient experience to see design patterns' advantages
-\item A tendency to overdo the application of patterns
-\item Students do not necessarily see patterns as a best practice
-\end{itemize}
-
 \section{Conclusions and Future Work}
 
+This paper presented an approach intended, not necessarily to measurably increase student proficiency on assessments related to the topic of software design patterns and their application, but instead to make the lesson coverage of the topic more student-centered, hands-on, and engaging than it current practice suggests. To do this, we propose taking a bottom-up approach with a code example, then working up to the more abstract generalizations of each pattern covered. This allows students to start with small-scale, familiar, and easy-to-understand examples and incrementally work up to the abstract models and the associated problems. This minimizes the amount of instructor-centered lecture coverage needed to present new material and leaves students with far more activity-focused lessons.
+
+Despite the increase in student-centered activity, several issues related to the teaching of design patterns remain unresolved. These issues are what Köppe described as pitfalls related to the teaching of patterns~\cite{koppe2011}:
+\begin{itemize}
+\item Students often attempt to apply patterns too hastily. It is natural to assume that if one identifies a place where a pattern might fits, refactoring code a pattern there doesn't necessarily improve the code. Knowing when not to apply a pattern is an equally important skill for students to develop.
+\item Insufficient experience to see design patterns' advantages. Although the pedagogy described in this paper provides initial experience working with patterns, fully understanding the benefits of design patterns requires more experience than can be provided in an undergraduate academic setting with a limited amount of class time available while keeping student workload reasonable.
+\item A tendency to overdo the application of patterns. A corollary to applying patterns too hastily is applying patterns where they are not needed at all. In our experience, students have a strong tendency to overuse certain patterns such as Singleton.
+\item Students do not necessarily see patterns as a best practice. This is again a consequence of limited experience that can be addressed somewhat, but not fully, in an undergraduate course.
+\end{itemize}
+
+All of these pitfalls are topics to be addressed in future iterations of our software engineering and related software development and computer science courses.
 \begin{thebibliography}{9}
 
 \bibitem{alahmad2006}
@@ -236,3 +226,12 @@ Proceedings of the 36th SIGCSE Technical Symposium on Computer Science Education
 \end{thebibliography}
 \end{document}
 
+Hands on practice with code. Examine the code, build and run it. What does it do?
+
+Make a modification to it given instruction. 
+
+Placement of lesson in the course.
+
+Positioning of the course in the program curriculum.
+
+Effectiveness.
