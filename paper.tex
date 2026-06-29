@@ -73,18 +73,33 @@ The examples provided for study are drawn from problem domains with which studen
 \caption{Decorator Pattern Concrete and Decorated Classes}
 \end{figure}
 
+\begin{figure*}[h]
+\centering
+\includegraphics[width=.75\textwidth]{classdiagrams.png}
+\label{umlclass}
+\caption{Decorator Pattern Class Mapping}
+\end{figure*}
+
 \subsection{Step 2: Create Abstract Model from the Code}
 Once students understand what the code example does and have identified the relevant design elements, they are asked to create an abstract model of the code using a UML class diagram. By doing so, they can better visualize the elements and how they relate to each other as an object-oriented model. Students also visualize the purpose of class instance variables and how they contribute to program functionality when implemented in code.
+
 
 The model students care as part of this step is an abstract representation of a particular problem solution. When creating this model, students are asked to think about how the abstract elements in the model can be further generalized to make the solution less application specific. The instructor's role is to further reinforce understanding of the design elements and critique the models. Student peer review can also be used as part of this activity.
 
 \subsection{Step 3: Present the General Pattern}
 
-Once students have had hands-on experience with the code and created an abstract model of that code, the more traditional design pattern lesson begins. However, because of the prerequisite activity work, this lesson is abbreviated. Taking the application-specific design models as a starting point, the general design pattern model can be easily derived. The identification and purpose of model elements, the object-oriented design concepts used, and the relationships between elements have already been established. What is traditionally the most tedious and unengaging part of teaching design patterns can be completed in a matter of a few minutes.
+Once students have had hands-on experience with the code and created an abstract model of that code, the more traditional design pattern lesson begins. However, because of the prerequisite activity work, this lesson is abbreviated as no new information needs to be introduced. Taking the application-specific design models as a starting point, the general design pattern model can be easily derived. The identification and purpose of model elements, the object-oriented design concepts used, and the relationships between elements have already been established. What is traditionally the most tedious and unengaging part of teaching design patterns can be completed in a matter of a few minutes.
 
 \subsection{Step 4: Apply to a New Problem}
 
+
+
 In the final step, a more complex program is given to students. This program does not contain any design patterns, but provides an opportunity for refactoring. As the last portion of the lesson, students identify how the pattern covered might fit into the existing program. They identify the application-specific classes that correspond to the abstract general model and create a new design for the program that includes the pattern. This gets to the heart of what the design pattern is and why it exists, i.e., what problem it is intended to solve. By taking this step, students gain an appreciation for the need and benefit of such patterns.
+
+In this step, the analysis of the flawed program is part of an intructor-guided discussion. Part of the learning involves not only the identification of program segments that can be improved using design patterns, but a discussion and understanding of what the code lacks, how an appropriate design pattern can improve readability, simplicity, or extensibility, and how that pattern would fit into the existing program structure.
+
+For the example in Figures~1 and~2, students map the elements of the Game Character class to the abstract components of the Decorator pattern. In particular, the relatable {\texttt{attack}} and {\texttt{defend}} operations are abstracted into the general {\texttt{operation}} method in the canonical pattern design, as shown in Figure~3.
+
 
 \section{Discussion}
 
@@ -112,6 +127,10 @@ Placement of lesson in the course.
 Positioning of the course in the program curriculum.
 
 Effectiveness.
+
+This work is not intended to necessarily increase student proficiency in understanding and applying design patterns. The intent is more to apply student-centered pedagogy to a topic that frequently lacks engagement in practice. By starting from a code example of a design pattern implementation that leads to the more abstract model, the conceptual basis for the pattern, and the design problems it is intended to solve, we minimize to the extent possible classroom time spent in lecture covering unrelatable and repetitious topics.
+
+With a more methodical approach, this methodology also prevents one of the most common problems instructors face when covering design patterns: trying to cover too many.
 
 To further place this work in context, we acknowledge Köppe's pitfalls related to the teaching of patterns~\cite{koppe2011}:
 \begin{itemize}
