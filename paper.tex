@@ -25,7 +25,7 @@ jeffrey.hemmes@afacademy.af.edu}
 
 
 \begin{abstract}
-Software design patterns are a cornerstone of professional software engineering education, yet traditional approaches to teaching them often fail students by leading with abstraction. This paper proposes and evaluates a \emph{code-first, pattern-second} (CFPS) pedagogical framework in which students encounter concrete implementation problems before being introduced to the canonical pattern that resolves them. Drawing on constructivist learning theory, cognitive load theory, and empirical observations from undergraduate software engineering courses, we argue that grounding pattern instruction in executable code produces deeper conceptual transfer, stronger retention, and greater practical confidence than the conventional pattern-then-example sequence. We describe the CFPS instructionalmodel in detail, illustrate it through three representative patterns---Observer, Strategy, and Factory Method---and discuss curriculum design implications for instructors adopting approach.
+Software design patterns are an important element of professional software engineering practice, and therefore a topic typically covered in undergraduate software engineering courses as part of a computer science curriculum. Despite the importance of design patterns in both professional software development and computer science education, best pedagogical practices are very frequently not applied when teaching them, with a traditional lecture-based approach still commonly used. Student-centered learning involving hands-on activities and self-discovery of lesson topics is considered an effective approach to engaging and effective teaching and learning. In this paper, a pedagogical methodology for minimizing the extent to which instructor-led lecturing is used in teaching software design patterns and replaced with student-focused learning activities that increases engagement and student interest is presented. The methodology involves taking a code-first or bottom-up approach to teaching what is all to frequently a tedious and repetitious subject to cover in class lessons.
 \end{abstract}
 
 \section{Introduction}
@@ -63,21 +63,21 @@ The examples provided for study are drawn from problem domains with which studen
 \centering
 \includegraphics[width=0.25\textwidth]{1.png}
 \label{code1}
-\caption{Decorator Pattern Base Classes}
+\caption{Decorator Pattern Abstract Base Classes. Simple example of abstract classes implementing elements of a Decorator design pattern in Python using the example of game characters that can be augmented with additional capabilities for attack and defense.}
 \end{figure}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.25\textwidth]{2.png}
 \label{code2}
-\caption{Decorator Pattern Concrete and Decorated Classes}
+\caption{Decorator Pattern Concrete and Decorated Classes. Example concrete decorator classes implementing additional attack and defense capabilities provided to a game character.}
 \end{figure}
 
 \begin{figure*}[h]
 \centering
 \includegraphics[width=.8\textwidth]{classdiagrams.png}
 \label{umlclass}
-\caption{Decorator Pattern Class Mapping}
+\caption{Decorator Pattern Class Mapping. Students are asked to transform an application-specific model of an implemented design pattern into a similar model of the general pattern through a hands-on activity involving the identification of abstract design elements present in an existing code example.}
 \end{figure*}
 
 \subsection{Step 2: Create Abstract Model from the Code}
